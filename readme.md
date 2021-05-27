@@ -4,7 +4,7 @@
 #### Tutor Principal: Dr. Joan Albert Sánchez Cabeza
 
 <p align="center">
-  <img src="Imagenes/Graficas_Perfiles_Todos_20190509-3.png" width="550" title=" ">
+  <img src="Imagenes/Graficas_Perfiles_Todos_20190509-3.png" width="700" title=" ">
 </p>
 
 The natural radionuclide 210Pb is commonly used to date recent sediments (≤ 100 years) and reconstruct the history of Global Change in multiple aquatic ecosystems. Its quantification is usually carried out by high-resolution low-background gamma spectrometry, through the detection of its gamma ray 46.54 keV which, being in the low energy region of the spectrum, is seriously affected by sample self-absorption. Therefore, the correct quantification of 210Pb in sediment samples requires corrections for sample density and composition.
@@ -14,6 +14,6 @@ The elemental composition of some sections of six sedimentary cores, from contra
 With a pattern of monoenergetic emitters in aqueous media, a calibration curve was constructed that was used to correct the efficiency of 210Pb and 214Pb due to the composition and density of the sediments. The deviations of the corrected activity versus uncorrected were in the range 2 - 16 %, and it was concluded that the activity of the sample requires the proposed correction in most of the studied cases. To verify the validity of the correction in the framework of 210Pb sediment dating, sections were selected where the secular equilibrium between 210Pb and 214Pb (in turn in equilibrium with 226Ra) was expected, and it was found that the mean deviation from equilibrium was 7 ± 8%. Dating of sedimentary cores was performed with 210Pb by using the constant flow model. It was concluded that the results of the dating depend on a complex form of the absolute values and the variability of the corrected efficiencies and the masses of the sections along the core.
 
 <p align="center">
-  <img src="Imagenes/XRF_Todos_Los_Nucleos_1-3.png" width="200" title=" ">
-  <img src="Imagenes/XRF_Todos_Los_Nucleos_2-3.png" width="200" title=" ">
+  <img src="Imagenes/XRF_Todos_Los_Nucleos_1-3.png" width="400" title=" ">
+  <img src="Imagenes/XRF_Todos_Los_Nucleos_2-3.png" width="400" title=" ">
 </p>
