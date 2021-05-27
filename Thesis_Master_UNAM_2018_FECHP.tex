@@ -1,0 +1,183 @@
+\documentclass[12pt,letterpaper,openright]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{ucs}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2.5cm]{geometry}
+%------------------------------------------------------------------------------------------------------------
+\sloppy
+\setlength{\parindent}{0pt}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{url}
+%------------------------------------------------------------------------------------------------------------
+\newcommand{\Cs}{$^{137}$Cs}
+\newcommand{\Po}{$^{210}$Po}
+\newcommand{\Ra}{$^{226}$Ra}
+\newcommand{\PbCero}{$^{210}$Pb}
+\newcommand{\PbCeroTo}{$^{210}$Pb$_\text{total}$}
+\newcommand{\PbCeroEx}{$^{210}$Pb$_\text{exc}$}
+\newcommand{\PbCeroBa}{$^{210}$Pb$_\text{base}$}
+\newcommand{\PbCuatro}{$^{214}$Pb}
+\newcommand{\Bi}{$^{210}$Bi}
+\newcommand{\BiCuatro}{$^{214}$Bi}
+\newcommand{\UDosTresOcho}{$^{238}$U}
+\newcommand{\Rn}{$^{222}$Rn}
+\newcommand{\Kcuarenta}{$^{40}$K}
+%------------------------------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------------------------------------
+\usepackage{color}   %May be necessary if you want to color links
+\usepackage[colorlinks]{hyperref}
+%\hypersetup{colorlinks=true, linktoc=all, allcolors = blue}
+\hypersetup{colorlinks=true, linktoc=all, allcolors = black}
+%------------------------------------------------------------------------------------------------------------
+\usepackage{emptypage}
+%------------------------------------------------------------------------------------------------------------
+\usepackage{fancyhdr} %Encabezados
+%------------------------------------------------------------------------------------------------------------
+\usepackage{adjustbox}
+\usepackage{blindtext}
+%$\,$------------------------------------------------------------------------------------------------------------
+
+\usepackage{layouts}
+%-------------------------------------
+% Stilo de titulo de caphter
+%Options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
+\usepackage[Conny]{fncychap}
+
+%-------------------------------------
+% Primera letra mayuscula 
+\usepackage{erewhon}
+\usepackage{lipsum}
+\usepackage{lettrine}
+\usepackage{GoudyIn}
+
+\usepackage[x11names, table, xcdraw]{xcolor} 
+\renewcommand{\LettrineFontHook}{\color{black}\GoudyInfamily{}}
+\LettrineTextFont{\itshape}
+\setcounter{DefaultLines}{4}%
+%--------------------------------------
+\usepackage{afterpage}
+\newcommand\blankpage{
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+%-.--------
+\makeatletter
+\renewcommand\thesubsubsection{\thesubsection.\@alph\c@subsubsection}
+\makeatother
+%---------------------
+% Definiendo colores azules: AZUL 1 = blanco, Azul5= FUERTE frm colorbewr.org
+\definecolor{Blue1}{RGB}{247,251,255}
+\definecolor{Blue2}{RGB}{222,235,247}
+\definecolor{Blue3}{RGB}{198,219,239}
+\definecolor{Blue4}{RGB}{158,202,225}
+\definecolor{Blue5}{RGB}{107,174,214}
+\definecolor{Blue6}{RGB}{66,146,198}
+\definecolor{Blue7}{RGB}{33,113,181}
+\definecolor{Blue8}{RGB}{8,81,156}
+\definecolor{Blue9}{RGB}{8,48,107}
+
+\definecolor{Green1}{RGB}{247,252,245}
+\definecolor{Green2}{RGB}{229,245,224}
+\definecolor{Green3}{RGB}{199,233,192}
+\definecolor{Green4}{RGB}{161,217,155}
+\definecolor{Green5}{RGB}{116,196,118}
+\definecolor{Green6}{RGB}{65,171,93}
+\definecolor{Green7}{RGB}{35,139,69}
+\definecolor{Green8}{RGB}{0,109,44}
+\definecolor{Green9}{RGB}{0,68,27}
+
+\definecolor{Red1}{RGB}{255,245,240}
+\definecolor{Red2}{RGB}{254,224,210}
+\definecolor{Red3}{RGB}{252,187,161}
+\definecolor{Red4}{RGB}{252,146,114}
+\definecolor{Red5}{RGB}{251,106,74}
+\definecolor{Red6}{RGB}{239,59,44}
+\definecolor{Red7}{RGB}{203,24,29}
+\definecolor{Red8}{RGB}{165,15,21}
+\definecolor{Red9}{RGB}{103,0,13}
+%---- espacio tablas
+\usepackage{booktabs}
+%---------------------- Grados
+\newcommand{\grados}{$^{\circ}$}
+%---------------------- Poner SubSubSection en Tabla
+%\setcounter{secnumdepth}{3} 
+%\setcounter{tocdepth}{3} 
+%---------------------- Figtura en text
+\usepackage{wrapfig}
+%---------------------- Array text
+\usepackage{array,amsmath}
+\newcolumntype{L}{>$l<$}
+%----------------------------------------------------------
+% Separador decimal
+\spanishdecimal{.}
+%----------------------------------------------------------
+% Para bibliografía en español
+\usepackage{babelbib}
+%----------------------------------------------------------
+% Titutlos en LowerCase
+
+\begin{document}
+\pagenumbering{roman}
+\include{frontmatter/portada}
+%\afterpage{\blankpage}
+
+\fancypagestyle{plain}{%
+\fancyhf{} % clear all header and footer fields
+\fancyfoot[C]{\thepage} % except the center
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}}
+% Definiendo estilo headers and foot del resto del libro 
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[EL]{\nouppercase{\leftmark}}
+\fancyhead[OR]{\nouppercase{\rightmark}}
+\fancyfoot[C]{\thepage}
+% Titulos en minuscula - LowerCase
+\let\MakeUppercase\relax
+
+\include{frontmatter/acknowledgments}
+\include{frontmatter/abbreviations}
+\include{frontmatter/IndicesFiguraTablas}
+%\afterpage{\blankpage}
+
+
+\fancypagestyle{plain}{%
+\fancyhf{} % clear all header and footer fields
+\fancyfoot[EL]{Página \thepage} % except the center
+\fancyfoot[OR]{Página \thepage} % except the center
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}}
+% Definiendo estilo headers and foot del resto del libro 
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[EL]{\nouppercase{\leftmark}}
+\fancyhead[OR]{\nouppercase{\rightmark}}
+\fancyfoot[EL]{Página \thepage}
+\fancyfoot[C]{}
+\fancyfoot[OR]{Página \thepage}
+
+\pagenumbering{arabic} % para comenzar la no. de paginas en numeros romanos
+\include{frontmatter/resumen}
+\include{frontmatter/abstract}
+
+\include{chapters/Introduccion}
+\include{chapters/Metodologia}
+\include{chapters/Resultados_y_Discusion}
+\include{chapters/Conclusiones}
+\include{chapters/Perspectivas}
+\appendix
+\include{appendices/appendix1}
+\include{appendices/appendix2-OptANGLE}
+\include{appendices/appendix3-VarEficiencia}
+\include{appendices/appendix4-ZonaEquilibrio}
+\include{appendices/appendix6-MRC}
+
+\bibliographystyle{apalike-es}
+\bibliographystyle{plain}
+\bibliography{Bibliography}
+\end{document}
