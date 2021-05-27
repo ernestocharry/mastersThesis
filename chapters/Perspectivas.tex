@@ -1,0 +1,20 @@
+\chapter{Perspectivas}
+\lettrine{E}{}n primer lugar, la necesidad de realizar la corrección por densidad y composición en todas las muestras implica la integración de toda la información necesaria de forma operativa. Ello no es fácil debido a la diversidad de las técnicas utilizadas, la heterogeneidad de los resultados emitidos por los equipos y la necesidad de la intervención humana en cada uno de los pasos. 
+\\
+\\
+Si bien se trata de un esfuerzo importante y diverso en la mayoría de los laboratorios, se propone la siguiente metodología:
+\\ \\
+\textbf{1.}  Crear un sistema de codificación única y completa de las muestras, con un sistema automático de detección de errores.
+\\ 
+\textbf{2.} Para cada uno de los equipos de análisis elemental, definición del producto final (concentraciones) en unidades absolutas, y acumulación de la información final en un servidor único. 
+\\ 
+\textbf{3.} En el caso de la espectrometría de rayos gamma, generar calibraciones de referencia únicas para cada detector y geometría utilizadas. No es necesario definir la densidad final de cada muestra.
+\\ 
+\textbf{4.} Al final (o durante) del proceso analítico, capturar de forma automática toda la información disponible de las muestras.
+\\ 
+\textbf{5.} Con esta información, utilizar un código para realizar la corrección de densidad y autoabsorción mediante ANGLE (o un código similar) y proporcionar las actividades corregidas de los radionúclidos de interés.
+\\ \\
+Una posibilidad a explorar es generar una extensa base de datos en la cual, dada la concentración de un número limitado de elementos y densidades, se pueda interpolar la corrección de eficiencia para cada muestra. Además, este ejercicio debería ser repetido para cada combinación geometría – detector de interés. Antes de abordar un proyecto de estas dimensiones, sería necesario realizar una estimación del esfuerzo de cómputo necesario y valorar el costo-beneficio del mismo. Otra posible alternativa es investigar sobre la posibilidad de utilizar modelos simplificados para realizar la estimación de la eficiencia corregida para cada muestra.
+\\
+\\
+Una de las limitaciones de este trabajo es la necesidad de realizar aproximaciones de las concentraciones de H y O. Al menos en el caso del oxígeno, sería deseable explorar técnicas analíticas que permitan determinar este elemento de forma sistemática. Por ejemplo, el sistema \textit{Vario-Cube} de Elementar tiene esta capacidad, y se propone explorar el costo beneficio del uso de esta técnica, pues por un lado la corrección final sería menor al 3 \% y el costo del equipo y del recurso humano puede ser alto para los laboratorios que no lo tengan implementado. 

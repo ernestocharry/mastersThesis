@@ -1,0 +1,10 @@
+\chapter{Efecto de la corrección de la eficiencia sobre el fechado}\label{ApexCorreccionEficiencia}
+\lettrine{E}{}n el modelo de fechado de Flujo Constante, CF, el fechado $t$ de una sección es 
+\begin{equation}
+t(i) = \dfrac{1}{\lambda} \ln\left(\dfrac{A(0)}{A(i)}\right) = \dfrac{1}{\lambda}\ln\left( \dfrac{\sum_{j=0}^\infty m(j)\,C_\text{cor}(j)  }{\sum_{j=i}^\infty m(j)\,C_\text{cor}(j) } \right).
+\end{equation}
+Si $C_\text{cor} = C\,\dfrac{\epsilon}{\epsilon_\text{cor}}$, Ecuación \ref{Eq-ActividadCorregida}, y la eficiencia $\epsilon$ es constante para \PbCero, entonces
+\begin{equation}
+t(i) = \dfrac{1}{\lambda}\ln\left( \dfrac{\sum_{j=0}^\infty m(j)\,C(j)\,\dfrac{\epsilon}{\epsilon_\text{cor}(j)}}{\sum_{j=i}^\infty m(j)\,C(j)\,\dfrac{\epsilon}{\epsilon_\text{cor}(j)} } \right) = \dfrac{1}{\lambda}\ln\left( \dfrac{\sum_{j=0}^\infty m(j)\,C(j)}{\sum_{j=i}^\infty m(j)\,C(j) } \right).
+\end{equation}
+Es decir, el fechado $t$ de una sección no se ve afectado si la corrección es constante para todas las secciones del núcleo sedimentario.
