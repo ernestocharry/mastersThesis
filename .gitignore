@@ -32,10 +32,14 @@ Temporary Items
 *.ps
 *.out
 *.lot
-*.lot
+*.log
 *.lof
 *.div
 *.blg
 *.bbl
 *.aux
 *.snm
+*.dvi
+*.nav
+*.bak
+
