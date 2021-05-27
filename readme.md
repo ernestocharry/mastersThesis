@@ -1,6 +1,6 @@
-## Master's Thesis, Universidad Nacional Autónoma de México
-# _Corrección de las actividades específicas y del fechado con 210Pb debido a la composición para muestras de sedimentos acuáticos_
-#### **Félix Ernesto Charry Pastrana**, Tutor Principal: **Dr. Joan Albert Sánchez Cabeza**
+### Master's Thesis, Universidad Nacional Autónoma de México
+## _Corrección de las actividades específicas y del fechado con 210Pb debido a la composición para muestras de sedimentos acuáticos_
+##### **Félix Ernesto Charry Pastrana**, Tutor Principal: **Dr. Joan Albert Sánchez Cabeza**
 
 <p align="center">
   <img src="Imagenes/Graficas_Perfiles_Todos_20190509-3.png" width="700" title=" ">
